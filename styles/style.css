@@ -1,0 +1,225 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 220px;
+    background-color: #333;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px;
+    padding: 20px 20px 0 20px; /* Top, Right, Bottom, Left padding */
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f8f8;
+}
+
+.d-flex {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: nowrap; /* Ensures cards stay in a single row */
+    justify-content: space-between;
+    gap: 1rem; /* Space between the cards */
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 30%; /* This ensures each card occupies around 30% of the width */
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Minimalist Footer */
+.footer-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Flexbox layout for the main content */
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Footer Content */
+.footer-text {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.footer-content {
+    margin-bottom: 30px;
+}
+
+.footer-content h4 {
+    color: #777;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-content h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #7777;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 5px solid rgba(0, 0, 0, 0.1);  /* Darker or higher contrast for visibility */
+    padding: 20px 0;
+    margin-top: 20px;  /* Adjust top margin as necessary */
+    font-size: 0.875rem;
+    color: #777;
+    text-align: center;
+}
+
+/* Contact Info */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info li i {
+    width: 30px;
+    color: #777;
+    font-size: 1.2rem;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px; /* Equal width and height for a perfect circle */
+    height: 50px;
+    border-radius: 50%; /* Makes it round */
+    color: white;
+    background: #777;
+    border: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-to-top i {
+    font-size: 15px; /* Adjust icon size */
+}
+
+
+.back-to-top.show {
+    display: flex;
+}
