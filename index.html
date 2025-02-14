@@ -6,14 +6,18 @@
         <title>AXIS/Mobi - Minimalist Style</title>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Bootstrap 5 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <!-- Bootstrap 5 JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-
-        <!-- Header -->
-        <header>
-            <h1>AXIS/Mobi - Minimalist Style Page</h1>
-        </header>
 
         <!-- Sidebar -->
         <div class="sidebar">
@@ -25,22 +29,77 @@
 
         <!-- Main Content -->
         <div class="main-content">
-            <div id="section1" class="section">
-                <h2>Welcome to AXIS/Mobi</h2>
-                <p>At <strong>AXIS/Mobi</strong>, we are dedicated to
-                    transforming digital experiences with <strong>cutting-edge
-                        technology</strong> and <strong>innovative
-                        solutions</strong>. Our focus is on delivering
-                    <strong>high-performance</strong>, <strong>secure</strong>,
-                    and <strong>scalable platforms</strong> that drive success
-                    for businesses and individuals alike.</p><br>
-                <p>From <span style="font-weight: bold;">fast
-                        performance</span> to <span
-                        style="font-weight: bold;">24/7 expert
-                        support</span>, AXIS/Mobi provides everything you need
-                    to thrive in a <span
-                        style="font-weight: bold;">digital
-                        world</span>.</p>
+            <div id="section1" class="carousel-item active">
+                <img
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3"
+                    class="d-block w-100" alt="Technology">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption">
+                    <h2>Welcome to AXIS/<span
+                            class="text-danger">Mobi</span></h2>
+                    <p>Transforming ideas into digital excellence</p>
+                    <a href="#section3" class="btn btn-primary btn-lg mt-3">
+                        Explore More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+
+                <!-- Contact Form Overlay -->
+                <div class="contact-form-overlay">
+                    <div class="contact-form-wrapper">
+                        <div class="form-header">
+                            <h2>Get in Touch</h2>
+                            <p>We'd love to hear from you</p>
+                        </div>
+                        <form id="contactForm" class="needs-validation"
+                            novalidate>
+                            <div class="form-floating mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i
+                                            class="fas fa-user"></i></span>
+                                    <input type="text" class="form-control"
+                                        id="nameInput" placeholder="Your Name"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i
+                                            class="fas fa-envelope"></i></span>
+                                    <input type="email" class="form-control"
+                                        id="emailInput"
+                                        placeholder="Email Address" required>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i
+                                            class="fas fa-phone"></i></span>
+                                    <input type="tel" class="form-control"
+                                        id="phoneInput"
+                                        placeholder="Phone Number" required>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i
+                                            class="fas fa-comment"></i></span>
+                                    <textarea class="form-control"
+                                        id="messageInput"
+                                        placeholder="Your Message"
+                                        style="height: 100px"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                Send Message <i
+                                    class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
             <div id="section2" class="section">
@@ -79,39 +138,92 @@
                         style="font-weight: bold;">offer to elevate your digital
                         experience.</span></p>
                 <div class="d-flex justify-content-between">
-                    <!-- Service 1 - Static Card -->
-                    <div class="card"
-                        style="flex: 1 1 33%; margin-right: 1rem;">
-                        <h3>Fast Performance</h3>
-                        <p>Lightning-fast loading times and smooth interactions
-                            for the best user experience.</p>
+                    <!-- Service 1 - Card -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-4">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4 class="card-title">Fast Performance</h4>
+                                <p class="card-text">Lightning-fast loading
+                                    times and smooth interactions for the best
+                                    user experience.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Service 2 - Static Card -->
-                    <div class="card"
-                        style="flex: 1 1 33%; margin-right: 1rem;">
-                        <h3>Secure Platform</h3>
-                        <p>Enterprise-grade security
-                            with advanced encryption and protection.</p>
+                    <!-- Service 2 - Card -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-4">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <h4 class="card-title">Secure Platform</h4>
+                                <p class="card-text">Enterprise-grade security
+                                    with advanced encryption and protection.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Service 3 - Static Card -->
-                    <div class="card" style="flex: 1 1 33%;">
-                        <h3>24/7 Support</h3>
-                        <p>Round-the-clock customer
-                            support to help you with any questions.</p>
+                    <!-- Service 3 - Card -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-4">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h4 class="card-title">24/7 Support</h4>
+                                <p class="card-text">Round-the-clock customer
+                                    support to help you with any questions.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Got Questions Section -->
             <div id="section4" class="section">
+                <section id="got-questions" class="got-questions-section py-5">
+                    <div class="container">
+                        <div
+                            class="row justify-content-center align-items-center">
+                            <!-- Column for the Text -->
+                            <div class="col-lg-6 text-center text-lg-end">
+                                <h3 class="text-muted mb-4">Subscribe to our
+                                    newsletter for the latest updates and
+                                    exclusive offers</h3>
+                            </div>
+                            <!-- Column for the Button -->
+                            <div class="col-lg-6 text-center text-lg-start">
+                                <form id="subscribeForm" class="subscribe-form"
+                                    onsubmit="subscribe(event)">
+                                    <div class="input-group">
+                                        <button class="btn btn-primary"
+                                            type="submit">
+                                            Subscribe
+                                            <i
+                                                class="fas fa-paper-plane ms-2"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="section5" class="section">
                 <footer class="footer-section">
                     <div class="footer-row">
                         <!-- Footer Content (1/2 width) -->
                         <div class="footer-content">
                             <h4>About Us</h4>
-                            <p class="footer-text">We are dedicated to providing
-                                innovative solutions and exceptional service to
+                            <p class="footer-text">We are dedicated to
+                                providing
+                                innovative solutions and exceptional service
+                                to
                                 our clients worldwide.</p>
                         </div>
 
@@ -138,7 +250,8 @@
 
                     <!-- Footer Bottom -->
                     <div class="footer-bottom">
-                        <p class="footer-text">© <span id="currentYear"></span>
+                        <p class="footer-text">© <span
+                                id="currentYear"></span>
                             AXIS/Mobi. All Rights Reserved.</p>
                     </div>
                 </footer>

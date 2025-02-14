@@ -21,6 +21,16 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Function to handle form submission and show the modal
+function subscribe(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Show the modal
+    const modal = new bootstrap.Modal(document.getElementById('subscribeModal'));
+    modal.show();
+}
+
+
 // JavaScript to show the button when scrolling
 window.onscroll = function () {
     const backToTopButton = document.getElementById('backToTop');
